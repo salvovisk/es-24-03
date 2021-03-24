@@ -1,0 +1,20 @@
+.Card {
+  height: 350px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 1px rgba(25, 25, 25, 0.5);
+  padding: 25px;
+}
+
+.Card_body {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Card_img {
+  height: 128px;
+  width: 128px;
+}
