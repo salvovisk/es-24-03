@@ -2,34 +2,4 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.App {
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
 
-.ThemeBtn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background-color: #417ffa;
-  border: none;
-  border-radius: 50px;
-  height: 64px;
-  width: 64px;
-  font-size: 1.5rem;
-  color: gold;
-}
-
-.ThemeBtn:hover {
-  outline: none;
-  cursor: pointer;
-}
-
-.ThemeBtn:active,
-.ThemeBtn:focus {
-  outline: none;
-}
