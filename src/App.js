@@ -2,19 +2,31 @@ import "./App.css";
 import Card from "./components/Card";
 import Main from "./containers/main";
 import { ThemeBtn } from "./styledComponents/styles";
-import { useDispatch, useSelector } from "react-redux";
-import { SetDark, SetLight } from "./Store/actions";
+import { useContext } from "react";
+
+import { ThemeChangerContext } from "./Context/ThemeProvider";
+
+// import { useDispatch, useSelector } from "react-redux";
+// import { SetDark, SetLight } from "./Store/actions";
 
 function App() {
-  const dispatch = useDispatch();
-  const themeState = useSelector((state) => state);
-  const { theme } = themeState;
+  const {
+    state: { theme },
+    SetDark,
+    SetLight,
+  } = useContext(ThemeChangerContext);
+
+  // const theme = state.theme;
+
+  // const dispatch = useDispatch();
+  // const themeState = useSelector((state) => state);
+  // const { theme } = themeState;
 
   function handleThemeChange() {
     if (theme === "light") {
-      dispatch(SetDark());
+      SetDark();
     } else {
-      dispatch(SetLight());
+      SetLight();
     }
   }
 
